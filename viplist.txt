@@ -69,14 +69,3 @@ local allowedUserIds = {
    8323505645
    
 }
-
-local isWhitelisted = table.find(allowedUserIds, player.UserId) ~= nil
-if not isWhitelisted then
-   Rayfield:Notify({
-      Title = "Access Denied",
-      Content = "You are not authorized to use FayerX Universe.",
-      Duration = 7,
-      Image = 4483362458,
-   })
-   return
-end
